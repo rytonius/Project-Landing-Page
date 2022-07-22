@@ -1,0 +1,47 @@
+
+.top {
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    margin: 0px 96px 32px 96px;
+
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+}
+
+
+.topContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+.topLeft {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.topRight {
+    display: flex;
+}
+
+.midUp{
+    display: flex;
+}
+.midDown {
+    display: flex;
+}
+
+.bottom {
+    display: flex;
+}
