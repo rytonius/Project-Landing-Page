@@ -1,20 +1,30 @@
+body {
+    padding: 0 0 0 0;
+    background-color: rgb(0, 0, 0);
+}
 
+/*Far top section*/
 .top {
-    
+    background-color:rgb(31, 31, 31);
 }
 
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: top;
-    margin: 0px 96px 32px 96px;
-
+    margin: 0px 0px 32px 0px;
+    background-color: black;
+    background-size: 100% 100%;
+    gap: 0 10%;
+    padding: 0 4%;
 }
+
 
 ul {
     display: flex;
     list-style: none;
     gap: 16px;
+    
 }
 
 
@@ -23,21 +33,79 @@ ul {
     align-items: center;
     justify-content: center;
     gap: 10%;
+    padding: 0 4% 2%;
+    margin: 0px 1%;
+    
 }
 
 .topLeft {
     display: flex;
     flex-direction: column;
-
+    width: 480px;
 }
 
 .topRight {
     display: flex;
 }
 
+/* Middle top section */
 .midUp{
     display: flex;
+    flex-direction: column;
+    padding: 0 20px 0 0;
+    gap: 2%;
+    justify-content: center;
+    background-color: rgb(114, 43, 25);
+    color: black;
+    filter: invert(100%);
 }
+.midUp h3 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ImageRow {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.ImageRow P {
+    display: flex;
+    justify-content: center;
+} 
+
+#DragonKing, #Mech1 {
+    
+    border-radius: 25px;
+    width:160px;
+    height:155px;
+    border: 4px;
+    border-style: solid;
+    border-radius: 25px;
+    filter: invert(100%);
+}
+#DragonKing {
+    border-color: rgb(224, 98, 98);
+    background-image: url("Images/DragonKing.png");
+}
+
+#Mech1 {
+    border-color: rgb(100, 98, 224);
+    background-image: url("Images/Mech1.png");
+}
+
+/* .ImageRow #midUpImage {
+    border: 4px;
+    border-color: aqua;
+    border-style: solid;
+    border-radius: 25px;
+    padding: 8px;
+    
+} */
+
+
 .midDown {
     display: flex;
 }
