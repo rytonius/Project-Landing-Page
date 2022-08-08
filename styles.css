@@ -1,11 +1,39 @@
 body {
     padding: 0 0 0 0;
-    background-color: rgb(0, 0, 0);
+
+}
+
+
+@media (prefers-color-scheme: dark) {
+    body {
+      color: #eee;
+      background: #2a3132;
+    }
+}
+:root {
+    --Mist: #90AFC5;
+    --Stone: #336B87;
+    --Shadow: #2A3132;
+    --Autumn: #763626;
+}
+a {
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: #c9e6fb;
+}
+
+a:hover {
+    color: #92b5f0;
+} 
+
+a:active {
+    color: #737ad9;
 }
 
 /*Far top section*/
 .top {
-    background-color:rgb(31, 31, 31);
+    background-color:#2a3132;
 }
 
 .header {
@@ -13,18 +41,16 @@ body {
     justify-content: space-around;
     align-items: top;
     margin: 0px 0px 32px 0px;
-    background-color: black;
+    background-color: #763626;
     background-size: 100% 100%;
-    gap: 0 10%;
-    padding: 0 4%;
+    gap: 0 0%;
+    padding: 16px 4% 0% 0%;
 }
-
 
 ul {
     display: flex;
     list-style: none;
     gap: 16px;
-    
 }
 
 
@@ -34,7 +60,7 @@ ul {
     justify-content: center;
     gap: 10%;
     padding: 0 4% 2%;
-    margin: 0px 1%;
+    margin: 0px 0%;
     
 }
 
@@ -48,6 +74,30 @@ ul {
     display: flex;
 }
 
+#CoverPicture{
+    background-image: url("Images/dragon-shrink.png");
+    width: 480px;
+    height: 480px;
+    border: 4px; border-radius: 25px;
+    /* border-color: #90AFC5; */
+    border-style:ridge;
+}
+
+
+a:link #CoverPicture, a:visited #CoverPicture{
+    color: #90AFC5;
+}
+
+a:hover #CoverPicture {
+    color : #b0d4ee;
+}
+a:active #CoverPicture {
+    color: #577283;
+} 
+
+
+
+
 /* Middle top section */
 .midUp{
     display: flex;
@@ -55,9 +105,8 @@ ul {
     padding: 0 20px 0 0;
     gap: 2%;
     justify-content: center;
-    background-color: rgb(114, 43, 25);
+    background-color: #90AFC5;
     color: black;
-    filter: invert(100%);
 }
 .midUp h3 {
     display:flex;
@@ -76,26 +125,32 @@ ul {
     justify-content: center;
 } 
 
-#DragonKing, #Mech1 {
-    
-    border-radius: 25px;
-    width:160px;
-    height:155px;
+#midUpImage-1, #midUpImage-2, #midUpImage-3, #midUpImage-4 {
+    width:240px;
+    height:240px;
     border: 4px;
-    border-style: solid;
+    border-style: ridge;
     border-radius: 25px;
-    filter: invert(100%);
-}
-#DragonKing {
-    border-color: rgb(224, 98, 98);
-    background-image: url("Images/DragonKing.png");
+    /* border-color: #90AFC5;  */
 }
 
-#Mech1 {
-    border-color: rgb(100, 98, 224);
-    background-image: url("Images/Mech1.png");
+.ImageRow a:link, .ImageRow a:visited{
+    color: #336B87;
 }
 
+.ImageRow a:hover {
+    color : #4391b9;
+}
+.ImageRow a:active {
+    color: #183f52;
+} 
+#midUpImage-1 { background-image: url("Images/angel_of_death_and_destruction_about_to_destroy_a-shrink.png"); }
+
+#midUpImage-2 { background-image: url("Images/angel_of_death_and_destruction2-shrink.png"); }
+
+#midUpImage-3 { background-image: url("Images/psychic_terran_female-shrink.png"); }
+
+#midUpImage-4 { background-image: url("Images/cyberpunk_theme-shrink.png"); }
 /* .ImageRow #midUpImage {
     border: 4px;
     border-color: aqua;
@@ -105,11 +160,57 @@ ul {
     
 } */
 
-
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .midDown {
     display: flex;
+    background-color: #336B87;
+    height: 640 px;
+    padding: 2%;
+    justify-content: center;
+}
+
+.midDown p {
+    width: 240px;
+    border-radius: 25px;
+    border-color: #763626;
+    border-style: dotted;
+    padding: 8px;
 }
 
 .bottom {
     display: flex;
+    
 }
+
+.SuperBottom {
+    padding: 32px 0;
+    color: rgb(207, 207, 207);
+    background-color: #763626;
+}
+
+.SuperBottom p {
+    display: flex;
+    justify-content: center;
+}
+#DragonKing, #Mech1 {
+    width:160px;
+    height:155px;
+    border: 4px;
+    border-style: ridge;
+    border-radius: 25px;
+    border-color: rgb(13, 82, 82);
+    
+}
+#DragonKing {
+    background-image: url("Images/DragonKing.png");
+}
+
+#Mech1 {
+    background-image: url("Images/Mech1.png");
+}
+
