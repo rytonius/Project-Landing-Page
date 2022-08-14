@@ -80,16 +80,15 @@ ul {
     width: 480px;
 }
 
-#CoverPicture{
+#CoverPicture img{
     display:flex;
-    background-image: url("Images/dragon-shrink.png");
-    width: 480px;
-    height: 480px;
-    max-width:100%;
+    /* background-image: url("Images/dragon-shrink.png"); */
+    width: auto;
+	height: auto;
+	max-width: 100%;
     min-width: 25%;
     align-items:center;
     object-fit: contain;
-    aspect-ratio:2/1;
     border: 4px; border-radius: 25px;
     /* border-color: #90AFC5; */
     border-style:ridge;
